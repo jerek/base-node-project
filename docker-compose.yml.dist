@@ -1,0 +1,16 @@
+version: "3"
+services:
+  node:
+    build:
+      context: .
+    volumes:
+      - ./src:/src
+      - /src/node_modules/
+    ports:
+      - "80:80"
+    extra_hosts:
+      - "dev.example.com:YOUR.HOST.IP.ADDRESS"
+    command: "npm run dev"
+    environment:
+      EXAMPLE_INTERNAL_ORIGIN: "http://dev.example.com"
+      EXAMPLE_ORIGIN: "http://dev.example.com"
