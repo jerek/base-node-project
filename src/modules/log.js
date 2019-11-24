@@ -10,11 +10,8 @@ module.exports = new function () {
     // ***** VARIABLES ***** //
     // ********************* //
 
-    /** @type {object} Private object-scope variables. */
-    let my = {
-        /** @type {express} The Express app. This should be set immediately when the app is being initialized. */
-        app: undefined,
-    };
+    /** @type {express} The Express app. This should be set immediately when the app is being initialized. */
+    let app = undefined;
 
     // ********************* //
     // ***** FUNCTIONS ***** //
@@ -47,10 +44,10 @@ module.exports = new function () {
     /**
      * Store the Express app for later use.
      *
-     * @param {express} app
+     * @param {express} expressApp
      */
-    this.setApp = function (app) {
-        my.app = app;
+    this.setApp = function (expressApp) {
+        app = expressApp;
     };
 
     /**
@@ -68,7 +65,7 @@ module.exports = new function () {
     // ------- //
 
     function log(type, message, prefix) {
-        let appName = my.app ? my.app.get('name') : 'node app';
+        let appName = app ? app.get('name') : 'node app';
 
         let date = (new Date()).toISOString();
 
