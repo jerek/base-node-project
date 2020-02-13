@@ -1,0 +1,39 @@
+html {
+    background: #000;
+}
+
+body {
+    background: #111;
+    box-sizing: border-box;
+    color: #ccc;
+    font: 16px Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    max-width:calc(100% - 20px);
+    padding: 20px;
+    width: 960px;
+}
+
+a {
+    color: #99f;
+}
+
+a:hover {
+    color: #fff;
+}
+
+nav {
+    cursor: default;
+    margin:0 0 20px;
+}
+
+nav a {
+    background: #222;
+    border-radius: 4px;
+    margin: 0 10px 0 0;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #444;
+}

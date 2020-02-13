@@ -1,0 +1,8 @@
+{
+    "events": {
+        "restart": "echo \"[nodemon] App restarted due to: '$FILENAME'\""
+    },
+    "exec": "node --max-old-space-size=8192 index.js",
+    "ext": "js json ts",
+    "watch": ["index.js", "modules/"]
+}

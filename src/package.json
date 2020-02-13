@@ -1,0 +1,20 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.1"
+  },
+  "scripts": {
+    "dev": "nodemon -L",
+    "start": "node --max-old-space-size=8192 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jerek Dain",
+  "license": "ISC"
+}
